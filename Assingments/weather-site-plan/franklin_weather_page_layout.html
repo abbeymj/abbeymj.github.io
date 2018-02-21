@@ -1,22 +1,23 @@
 <!doctype html>
 <html lang="en-us">
 
-<head>
+ <head>
     <meta charset="UTF-8">
     <title>Franklin, ID | Weather Site</title>
     <meta name="author" content="Abbey Johnson">
     <meta name="description" content="Weather for Franklin, Idaho.">
     <meta name="viewport" content="width=device-width">
-
+    <link rel="stylesheet" type="text/css" href="/weather/css/screen.css" media="screen">
 </head>
 
 <body>
-    <h1>The Weather Site</h1>
-
-    <p>Current Search <a href="index.html">Home</a> <a href="franklin_weather_page.html">Franklin</a> Greenville Springfield</p>
+    <nav>
+        <img src="/images/plan-images/logo.jpeg">
+        <h3>The Weather Site</h3>
+    </nav>
 
     <main>
-        <h1>Franklin, Idaho</h1>
+        <h2><b>Franklin, Idaho</b></h2>
         <section id="locationInfo">
             <p><b>Zip:</b> 83237 | <b>Elevation:</b> 4501 ft. | <b>Location:</b>42.0135&deg;N, 111.8075&deg; W</p>
         </section>
@@ -37,18 +38,25 @@
                     </ul>
                 </section>
 
+
                 <section id="wind">
                     <h3><b>Wind</b></h3>
-                    <ul>
-                        <li>2 mph</li>
-                        <li>Direction: NW</li>
-                        <li>Gusts: 5mph</li>
+                    <p class="northMark">N</p>
+                    <div id="dial" class="w">
+                    </div>
+                    <div id="wind-info">
+                        <p id="wind-speed">2pmh</p>
+                    </div>-->
+                    <ul id="wind-direction">
+                        <li><b>Direction:</b> NW</li>
+                        <li><b>Gusts:</b> 5mph</li>
                     </ul>
                 </section>
             </div>
 
             <section id="video">
-                <h3><b>Video Forecast</b></h3>
+                <h2><b>Video Forecast</b></h2>
+                <img src="/weather/images/weather-images/video.png">
             </section>
         </div>
 
@@ -82,14 +90,14 @@
             </ul>
         </section>
 
-
+        <nav id="page-nav">
+            Favorites
+        </nav>
 
 
     </main>
-
     <footer>
         <p>©2018 - The Weather Site</p>
     </footer>
 </body>
-
 </html>

@@ -9,64 +9,153 @@
 * 4. Large Screen Styles
 *********************************************/
 
-
 /********************************************
 * 1. Imports
 *********************************************/
 
 /*get the font from google*/
-@import url('https://fonts.googleapis.com/css?family=Sansita');*/
 
+@import url('https://fonts.googleapis.com/css?family=Sansita');
+*/
 /*import the Normalize stylesheet*/
+
 @import url('https://fonts.googleapis.com/css?family=Sansita');
 
 
 /********************************************
 * 1. General Styles
 *********************************************/
-body{
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: Sansita, Helvetica, generic-family;
+
+}
+
+
+body {
     font-family: helvetica, arial, sans-serif;
     font-size: 20px;
 }
 
 
+* {
+    box-sizing: border-box;
+    /* changes width property
+    to total width instead of content width */
+}
+
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+article,
+aside,
+footer,
+header,
+nav,
+section,
+main,
+figcaption,
+figure {
+    display: block;
+    /* just in case we have
+    any older browsers that don't recognize
+    the HTML5 semantic elements */
+}
+
+body {
+    background-color: rgba(200, 200, 200, .6);
+    margin: .2em auto;
+    border: 1px solid;
+    border-radius: 15px;
+}
+
+
+#curWeather {
+    background-color: rgba(200, 200, 200, .6);
+    margin: .2em auto;
+    border: 1px solid;
+    border-radius: 15px;
+
+    background-image: url("/images/plan-images/sunny-winter.jpg");
+    background-size: cover;
+}
 
 
 
 
+************************************ #wind .nortMark {
+    font-size: smaller;
+    margin: .5em 0 0 0;
+    text-align: center;
+}
 
+#wind {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
 
+#wind-speed {
+    width: 100%;
+    text-align: center;
+    position: absolute;
+    top: 30%;
+}
 
+#dial {
+    height: 150px;
+    widows: 150px;
+    background: no-repeat center/85% url('weather/images/wind-pointer.png');
+    z-index: 100;
+    margin: -.6em auto 0;
+}
 
+/* rotate the dial to wind direction */
 
+.north {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+}
 
+.ne {
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
 
+.nw {
+    -webkit-transform: rotate(315deg);
+    transform: rotate(315deg);
+}
 
+.east {
+    -webkit-transform: rotate(90deg);
+    transform: rotate(90deg);
+}
 
+.south {
+    -webkit-transform: rotate(180deg);
+    transform: rotate(180deg);
+}
 
+.se {
+    -webkit-transform: rotate(135deg);
+    transform: rotate(135deg);
+}
 
+.sw {
+    -webkit-transform: rotate(225deg);
+    transform: rotate(225deg);
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.west {
+    -webkit-transform: rotate(270deg);
+    transform: rotate(270deg);
+}
