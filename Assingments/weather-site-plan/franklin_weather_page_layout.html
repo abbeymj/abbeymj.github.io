@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en-us">
 
- <head>
+<head>
     <meta charset="UTF-8">
     <title>Franklin, ID | Weather Site</title>
     <meta name="author" content="Abbey Johnson">
@@ -11,93 +11,107 @@
 </head>
 
 <body>
-    <nav>
-        <img src="/images/plan-images/logo.jpeg">
-        <h3>The Weather Site</h3>
-    </nav>
+    <div>
+        <header>
+            <div id="logo">
+                <img src="/images/plan-images/logo.jpeg" alt="site logo">
+            </div>
+            <h3>The Weather Site</h3>
+        </header>
 
-    <main>
-        <h2><b>Franklin, Idaho</b></h2>
-        <section id="locationInfo">
-            <p><b>Zip:</b> 83237 | <b>Elevation:</b> 4501 ft. | <b>Location:</b>42.0135&deg;N, 111.8075&deg; W</p>
-        </section>
+        <main>
+            <h2><b>Franklin, Idaho</b></h2>
+            <section id="locationInfo">
+                <p><b>Zip:</b> 83237 | <b>Elevation:</b> 4501 ft. | <b>Location:</b>42.0135&deg;N, 111.8075&deg; W</p>
+            </section>
 
-        <!-- curWeather holds temps, wind and video data -->
-        <div id="curWeather">
-            <!-- smallConditions holds temps, wind data -->
-            <div id="smallConditions">
-
-
-                <section id="temps">
-                    <h3><b>Temperature</b></h3>
-                    <ul>
-                        <li>24 &deg;</li>
-                        <li>34F</li>
-                        <li>21F</li>
-                        <li>Feels like 21F</li>
-                    </ul>
-                </section>
+            <!-- curWeather holds temps, wind and video data -->
+            <div id="curWeather">
+                <!-- smallConditions holds temps, wind data -->
+                <div id="smallConditions">
 
 
-                <section id="wind">
-                    <h3><b>Wind</b></h3>
-                    <p class="northMark">N</p>
-                    <div id="dial" class="w">
-                    </div>
-                    <div id="wind-info">
-                        <p id="wind-speed">2pmh</p>
-                    </div>-->
-                    <ul id="wind-direction">
-                        <li><b>Direction:</b> NW</li>
-                        <li><b>Gusts:</b> 5mph</li>
-                    </ul>
+                    <section id="temps">
+                        <h3><b>Temperature</b></h3>
+                        <ul>
+                            <li>
+                                <div id="temp1">24 &deg</div>
+                            </li>
+                            <li>
+                                <div id="temp2">34F</div>
+                            </li>
+                            <li>
+                                <div id="temp3">21F</div>
+                            </li>
+                            <li>Feels like 21F</li>
+                        </ul>
+                    </section>
+
+
+                    <section id="wind">
+                        <h3><b>Wind</b></h3>
+                        <p class="northMark">N</p>
+                        <div id="dial" class="w">
+                        </div>
+                        <div id="wind-info">
+                            <p id="wind-speed">2pmh</p>
+                        </div>
+                        <ul id="wind-direction">
+                            <li><b>Direction:</b> NW</li>
+                            <li><b>Gusts:</b> 5mph</li>
+                        </ul>
+                    </section>
+                </div>
+
+                <section id="video">
+                    <h2><b>Video Forecast</b></h2>
+                    <img src="/weather/images/weather-images/video.png" alt="Video icon">
                 </section>
             </div>
 
-            <section id="video">
-                <h2><b>Video Forecast</b></h2>
-                <img src="/weather/images/weather-images/video.png">
+            <section id="hourly">
+                <p><b>Hourly Forecast</b></p>
+                <ul>
+                    <li><a herf="#" title="12am Forecast">12am: 21F&deg; | </a></li>
+                    <li><a herf="#" title="1am Forecast">1am: 21F&deg; | </a></li>
+                    <li><a herf="#" title="2am Forecast">2am: 21F&deg; | </a></li>
+                    <li><a herf="#" title="3am Forecast">3am: 20F&deg; | </a></li>
+                    <li><a herf="#" title="4am Forecast">4am: 20F&deg; | </a></li>
+                    <li><a herf="#" title="5am Forecast">5am: 20F&deg; | </a></li>
+                    <li><a herf="#" title="6am Forecast">6am: 20F&deg; | </a></li>
+                    <li><a herf="#" title="7am Forecast">7am: 21F&deg; | </a></li>
+                    <li><a herf="#" title="8am Forecast">8am: 21F&deg; | </a></li>
+                    <li><a herf="#" title="9am Forecast">9am: 21F&deg; | </a></li>
+                    <li><a herf="#" title="10am Forecast">10am: 21F&deg; | </a></li>
+                    <li><a herf="#" title="11am Forecast">11am: 21F&deg; | </a></li>
+                    <li><a herf="#" title="12pm Forecast">12pm: 21F&deg; | </a></li>
+                    <li><a herf="#" title="1pm Forecast">1pm: 21F&deg; | </a></li>
+                    <li><a herf="#" title="2pm Forecast">2pm: 21F&deg; | </a></li>
+                    <li><a herf="#" title="3pm Forecast">3pm: 21F&deg; | </a></li>
+                    <li><a herf="#" title="4pm Forecast">4pm: 21F&deg; | </a></li>
+                    <li><a herf="#" title="5pm Forecast">5pm: 21F&deg; | </a></li>
+                    <li><a herf="#" title="6pm Forecast">6pm: 21F&deg; | </a></li>
+                    <li><a herf="#" title="7pm Forecast">7pm: 21F&deg; | </a></li>
+                    <li><a herf="#" title="8pm Forecast">8pm: 21F&deg; | </a></li>
+                    <li><a herf="#" title="9pm Forecast">9pm: 21F&deg; | </a></li>
+                    <li><a herf="#" title="10pm Forecast">10pm: 21F&deg; | </a></li>
+                    <li><a herf="#" title="11pm Forecast">11pm: 21F&deg; | </a></li>
+                </ul>
             </section>
-        </div>
 
-        <section id="hourly">
-            <p><b>Hourly Forecast</b></p>
-            <ul>
-                <li><a herf="#" title="12am Forecast">12am: 21F&deg;</a></li>
-                <li><a herf="#" title="1am Forecast">1am: 21F&deg;</a></li>
-                <li><a herf="#" title="2am Forecast">2am: 21F&deg;</a></li>
-                <li><a herf="#" title="3am Forecast">3am: 20F&deg;</a></li>
-                <li><a herf="#" title="4am Forecast">4am: 20F&deg;</a></li>
-                <li><a herf="#" title="5am Forecast">5am: 20F&deg;</a></li>
-                <li><a herf="#" title="6am Forecast">6am: 20F&deg;</a></li>
-                <li><a herf="#" title="7am Forecast">7am: 21F&deg;</a></li>
-                <li><a herf="#" title="8am Forecast">8am: 21F&deg;</a></li>
-                <li><a herf="#" title="9am Forecast">9am: 21F&deg;</a></li>
-                <li><a herf="#" title="10am Forecast">10am: 21F&deg;</a></li>
-                <li><a herf="#" title="11am Forecast">11am: 21F&deg;</a></li>
-                <li><a herf="#" title="12pm Forecast">12pm: 21F&deg;</a></li>
-                <li><a herf="#" title="1pm Forecast">1pm: 21F&deg;</a></li>
-                <li><a herf="#" title="2pm Forecast">2pm: 21F&deg;</a></li>
-                <li><a herf="#" title="3pm Forecast">3pm: 21F&deg;</a></li>
-                <li><a herf="#" title="4pm Forecast">4pm: 21F&deg;</a></li>
-                <li><a herf="#" title="5pm Forecast">5pm: 21F&deg;</a></li>
-                <li><a herf="#" title="6pm Forecast">6pm: 21F&deg;</a></li>
-                <li><a herf="#" title="7pm Forecast">7pm: 21F&deg;</a></li>
-                <li><a herf="#" title="8pm Forecast">8pm: 21F&deg;</a></li>
-                <li><a herf="#" title="9pm Forecast">9pm: 21F&deg;</a></li>
-                <li><a herf="#" title="10pm Forecast">10pm: 21F&deg;</a></li>
-                <li><a herf="#" title="11pm Forecast">11pm: 21F&deg;</a></li>
-            </ul>
-        </section>
+            <nav id="page-nav">
+                <flexbox>
 
-        <nav id="page-nav">
-            Favorites
-        </nav>
+                </flexbox>
+                Favorites
+            </nav>
 
 
-    </main>
-    <footer>
-        <p>©2018 - The Weather Site</p>
-    </footer>
+        </main>
+        <footer>
+            <p>©2018 - The Weather Site</p>
+        </footer>
+    </div>
 </body>
+
 </html>
