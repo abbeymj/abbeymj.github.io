@@ -44,14 +44,17 @@ h4,
 h5,
 h6 {
     font-family: Sansita, Helvetica, generic-family;
-
 }
-
 
 body {
     font-family: helvetica, arial, sans-serif;
     font-size: 20px;
     margin: 5px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
 }
 
 h2 {
@@ -71,6 +74,11 @@ header {
 
 #content {
     clear: both;
+}
+
+#locationInfo {
+    font-size: small;
+    flex-wrap: wrap;
 }
 
 /********************************************

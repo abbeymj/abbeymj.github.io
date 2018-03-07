@@ -13,20 +13,21 @@
 <body>
     <div>
         <header>
-            <div id="logo">
-                <img src="/images/plan-images/logo.jpeg" alt="site logo">
+            <div id="logo">&#9748
+                <!--                <img src="/images/plan-images/logo.jpeg" alt="site logo">-->
             </div>
-            <h3>The Weather Site</h3>
+            <p id="site-brand">The Weather Site</p>
         </header>
 
-        <main>
-            <h2><b>Franklin, Idaho</b></h2>
-            <section id="locationInfo">
-                <small>
-                <p><b>Zip:</b> 83237 | <b>Elevation:</b> 4501 ft. | <b>Location:</b>42.0135&deg;N, 111.8075&deg; W</p>
-                </small>
-            </section>
 
+
+
+        <h1><b>Franklin, Idaho</b></h1>
+        <section id="locationInfo">
+            <p><b>Zip:</b> 83237 | <b>Elevation:</b> 4501 ft. | <b>Location:</b>42.0135&deg;N, 111.8075&deg; W</p>
+        </section>
+
+        <main>
             <!-- curWeather holds temps, wind and video data -->
             <div id="curWeather">
                 <!-- smallConditions holds temps, wind data -->
@@ -101,16 +102,19 @@
                 </ul>
             </section>
 
-            <nav id="page-nav">
-                <flexbox>
-
-                </flexbox>
-                Favorites
-            </nav>
-
 
         </main>
         <footer>
+            <nav id="page nav">
+                <ul>
+                    <li>Current</li>
+                    <li>Search</li>
+                    <li><a href="franklin_weather_page_layout.html">Franklin</a></li>
+                    <li><a href="greenville_weather_page_layout.html">Greenville</a></li>
+                    <li><a href="springfield_weather_page_layout.html">Springfield</a></li>
+                </ul>
+            </nav>
+
             <p>©2018 - The Weather Site</p>
         </footer>
     </div>
