@@ -7,87 +7,94 @@
     <meta name="author" content="Abbey Johnson">
     <meta name="description" content="Weather for Springfield, Illinois.">
     <meta name="viewport" content="width=device-width">
-
 </head>
 
+
 <body>
-    <h1>The Weather Site</h1>
+    <div>
+        <header id="page-header">
+            <img src="/images/plan-images/logo.jpeg" alt="site logo">
+            <div class="site-brand">The Weather Site</div>
+        </header>
+        <nav id="page nav">
+            <ul>
+                <li>Current</li>
+                <li><a href="search.html">Search</a></li>
+                <li><a href="franklin_weather_page_layout.html" title="Visit the Weather Home page to see your current weather conditions based on your location">Franklin</a></li>
+                <li><a href="greenville_weather_page_layout.html" title="Visit this page to see the current weather conditions of Greenville, SC ">Greenville</a></li>
+                <li><a href="springfield_weather_page_layout.html" title="Visit this page to see the current weather conditions of Springfield, IL">Springfield</a></li>
+            </ul>
+        </nav>
+        <main>
+            <section id="locationInfo">
+                <h1><b>Springfield, Illinois</b></h1>
+                <dl>
+                    <dt>Zip:</dt>
+                    <dd id="zip">62701 </dd>
+                    <dt>Elevation:</dt>
+                    <dd id="elevation">558 ft. </dd>
+                    <dt>Location:</dt>
+                    <dd id="latlng">39.81&deg; N, 89.68&deg; W</dd>
+                </dl>
+            </section>
+            <div id="curWeather" clas="snowy">
+                <div id="smallConditions">
+                    <section id="temps">
+                        <h2>Temperature</h2>
+                        <p id="curTemp">24&deg;F</p>
+                        <p><span id="hi">35F</span> <span id="lo">10&deg;F</span></p>
+                        <p id="feel">Feels Like <span id="feelTemp">21</span>&deg;F</p>
+                    </section>
 
-    <p>Current Search <a href="index.html">Home</a> <a href="franklin_weather_page_layout.html">Franklin</a> <a href="greenville_weather_page_layout.html">Greenville</a> <a href="springfield_weather_page_layout.html">Springfield</a></p>
-
-    <main>
-        <h1>Springfield, Illinois</h1>
-        <section id="locationInfo">
-            <p><b>Zip:</b> 62701 | <b>Elevation:</b> 558 ft. | <b>Location:</b>39.81&deg;N, 89.68&deg; W</p>
-        </section>
-
-        <!-- curWeather holds temps, wind and video data -->
-        <div id="curWeather">
-            <!-- smallConditions holds temps, wind data -->
-            <div id="smallConditions">
-
-
-                <section id="temps">
-                    <h3><b>Temperature</b></h3>
-                    <ul>
-                        <li>24 &deg;</li>
-                        <li>35F</li>
-                        <li>10F</li>
-                        <li>Feels like 21F</li>
-                    </ul>
-                </section>
-
-                <section id="wind">
-                    <h3><b>Wind</b></h3>
-                    <ul>
-                        <li>15 mph</li>
-                        <li>Direction: NW</li>
-                        <li>Gusts: 5mph</li>
-                    </ul>
+                    <section id="wind">
+                        <h3><b>Wind</b></h3>
+                        <ul>
+                            <li>15 mph</li>
+                            <li>Direction: NW</li>
+                            <li>Gusts: 5mph</li>
+                        </ul>
+                    </section>
+                </div>
+                <section id="video">
+                    <h2>Video Forecast</h2>
+                    <img src="/weather/images/weather-images/video.png" alt="Video icon">
                 </section>
             </div>
-
-            <section id="video">
-                <h3><b>Video Forecast</b></h3>
+            <section id="hourly">
+                <p><b>Hourly Forecast</b></p>
+                <ul>
+                    <li><a herf="#" title="12am Forecast">12am: 35F&deg;</a></li>
+                    <li><a herf="#" title="1am Forecast">1am: 35F&deg;</a></li>
+                    <li><a herf="#" title="2am Forecast">2am: 34F&deg;</a></li>
+                    <li><a herf="#" title="3am Forecast">3am: 34F&deg;</a></li>
+                    <li><a herf="#" title="4am Forecast">4am: 34F&deg;</a></li>
+                    <li><a herf="#" title="5am Forecast">5am: 34F&deg;</a></li>
+                    <li><a herf="#" title="6am Forecast">6am: 33F&deg;</a></li>
+                    <li><a herf="#" title="7am Forecast">7am: 31F&deg;</a></li>
+                    <li><a herf="#" title="8am Forecast">8am: 29F&deg;</a></li>
+                    <li><a herf="#" title="9am Forecast">9am: 28F&deg;</a></li>
+                    <li><a herf="#" title="10am Forecast">10am: 27F&deg;</a></li>
+                    <li><a herf="#" title="11am Forecast">11am: 27F&deg;</a></li>
+                    <li><a herf="#" title="12pm Forecast">12pm: 27F&deg;</a></li>
+                    <li><a herf="#" title="1pm Forecast">1pm: 27F&deg;</a></li>
+                    <li><a herf="#" title="2pm Forecast">2pm: 27F&deg;</a></li>
+                    <li><a herf="#" title="3pm Forecast">3pm: 27F&deg;</a></li>
+                    <li><a herf="#" title="4pm Forecast">4pm: 27F&deg;</a></li>
+                    <li><a herf="#" title="5pm Forecast">5pm: 24F&deg;</a></li>
+                    <li><a herf="#" title="6pm Forecast">6pm: 22F&deg;</a></li>
+                    <li><a herf="#" title="7pm Forecast">7pm: 20F&deg;</a></li>
+                    <li><a herf="#" title="8pm Forecast">8pm: 18F&deg;</a></li>
+                    <li><a herf="#" title="9pm Forecast">9pm: 17F&deg;</a></li>
+                    <li><a herf="#" title="10pm Forecast">10pm: 15F&deg;</a></li>
+                    <li><a herf="#" title="11pm Forecast">11pm: 15F&deg;</a></li>
+                </ul>
             </section>
-        </div>
-
-        <section id="hourly">
-            <p><b>Hourly Forecast</b></p>
-            <ul>
-                <li><a herf="#" title="12am Forecast">12am: 35F&deg;</a></li>
-                <li><a herf="#" title="1am Forecast">1am: 35F&deg;</a></li>
-                <li><a herf="#" title="2am Forecast">2am: 34F&deg;</a></li>
-                <li><a herf="#" title="3am Forecast">3am: 34F&deg;</a></li>
-                <li><a herf="#" title="4am Forecast">4am: 34F&deg;</a></li>
-                <li><a herf="#" title="5am Forecast">5am: 34F&deg;</a></li>
-                <li><a herf="#" title="6am Forecast">6am: 33F&deg;</a></li>
-                <li><a herf="#" title="7am Forecast">7am: 31F&deg;</a></li>
-                <li><a herf="#" title="8am Forecast">8am: 29F&deg;</a></li>
-                <li><a herf="#" title="9am Forecast">9am: 28F&deg;</a></li>
-                <li><a herf="#" title="10am Forecast">10am: 27F&deg;</a></li>
-                <li><a herf="#" title="11am Forecast">11am: 27F&deg;</a></li>
-                <li><a herf="#" title="12pm Forecast">12pm: 27F&deg;</a></li>
-                <li><a herf="#" title="1pm Forecast">1pm: 27F&deg;</a></li>
-                <li><a herf="#" title="2pm Forecast">2pm: 27F&deg;</a></li>
-                <li><a herf="#" title="3pm Forecast">3pm: 27F&deg;</a></li>
-                <li><a herf="#" title="4pm Forecast">4pm: 27F&deg;</a></li>
-                <li><a herf="#" title="5pm Forecast">5pm: 24F&deg;</a></li>
-                <li><a herf="#" title="6pm Forecast">6pm: 22F&deg;</a></li>
-                <li><a herf="#" title="7pm Forecast">7pm: 20F&deg;</a></li>
-                <li><a herf="#" title="8pm Forecast">8pm: 18F&deg;</a></li>
-                <li><a herf="#" title="9pm Forecast">9pm: 17F&deg;</a></li>
-                <li><a herf="#" title="10pm Forecast">10pm: 15F&deg;</a></li>
-                <li><a herf="#" title="11pm Forecast">11pm: 15F&deg;</a></li>
-            </ul>
-        </section>
-
-
-    </main>
-
-    <footer>
-        <p>©2018 - The Weather Site</p>
-    </footer>
+        </main>
+        <footer>
+            <p>©2018 - The Weather Site | Weather data courtesy of</p>
+            <img src="weatherUndergroundLogo.jpeg">
+        </footer>
+    </div>
 </body>
 
 </html>
