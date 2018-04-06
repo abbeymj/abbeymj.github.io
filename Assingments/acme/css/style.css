@@ -1,0 +1,21 @@
+************************
+/*1. general
+* 2. header
+*
+*
+*
+*/
+
+/* general*/
+
+html {
+    background-image: url("/Assingments/acme/images/site/background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+
+/*header*/
+
+page-nav {}
