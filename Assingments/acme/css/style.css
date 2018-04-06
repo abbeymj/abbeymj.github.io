@@ -1,20 +1,25 @@
 ************************
 /*1. general
-* 2. header
-*
+* 2. Moblie First
+* 3. Largescreen
 *
 */
 
 /* general*/
 
-html {
-    background-image: url("/Assingments/acme/images/site/background.jpg");
+body {
+    background-image: url("../images/site/background.jpg");
     background-repeat: no-repeat;
     background-size: cover;
 }
 
-
-
-/*header*/
-
 page-nav {}
+
+
+/********************
+/* Moblie First
+********************/
+
+/********************
+/* Largescreen
+********************/
