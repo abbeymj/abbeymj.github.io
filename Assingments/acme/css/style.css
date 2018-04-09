@@ -1,6 +1,6 @@
 ************************
 /*1. general
-* 2. Moblie First
+* 2. Moblie
 * 3. Largescreen
 *
 */
@@ -8,16 +8,20 @@
 /* general*/
 
 body {
-    background-image: url("../images/site/background.jpg");
+    background-image: url("/Assingments/acme/images/site/background.jpg");
     background-repeat: no-repeat;
     background-size: cover;
 }
 
-page-nav {}
+
+page-nav {
+    background-image: url("/Assingments/acme/images/site/logo.png");
+    display: flex table-row;
+}
 
 
 /********************
-/* Moblie First
+/* Moblie
 ********************/
 
 /********************
